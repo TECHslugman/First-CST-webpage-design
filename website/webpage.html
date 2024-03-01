@@ -1,0 +1,156 @@
+<!doctype html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CST website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+
+
+<!----HEADERR SEACTION OF THE WEBSITE---->
+<section class="header">
+    <nav>
+        <a href="index.html"> 
+            <img src="logo.png">
+        </a>
+        <div class="nav-links" id = "navlinks">
+            <i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">COURSE</a></li>
+                <li><a href="">BLOG</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showmenu()" ></i>
+    </nav>
+<div class="text-Box">
+    <h1>
+        "In pursuit of preparing tomorrow's technologist."
+    </h1>
+    <p>“There’s nothing I believe in more strongly than getting young people interested in science and engineering, 
+        for a better tomorrow, for all humankind.”<br>- Bill Nye 
+    </p>
+    <a href="" class="btn"> Visit Us To Know More </a>
+
+</div>
+</section>
+
+
+<!-----Course---->
+<section class ="course">
+    <h1>Courses we offer</h1>
+    <p>Our college provides various degree programmes that will allow the students to grow. We thrive for exellence </p>
+    <div class = "row">
+        <div class = "course_col">
+            <h3>Degree programmes</h3>
+            <p>To help students become the creator of tomorrow we offer various degree programs to help them grow</p>
+        </div>
+
+        <div class = course_col>
+            <h3>Master's programmes</h3>
+            <p>We offer post gradute courses that will help students critically think</p>
+        </div>     
+    </div>
+</section>
+<!--Campus page-->
+<section class="campus">
+<h1> Our Collge Campus</h1>
+<p>Our college provides various degree programmes that will allow the students to grow. We thrive for exellence </p>
+
+<div class="row">
+    <div class="cam_col">
+        <img src = "labs.png">
+        <div class="pop_layer"></div>
+        <h3>Laboratories</h3>
+    </div>
+
+    <div class="cam_col">
+        <img src = "classes.png">
+        <div class="pop_layer"></div>
+        <h3>Class</h3>
+    </div>
+
+    <div class="cam_col">
+        <img src = "hostels.png">
+        <div class="pop_layer"></div>
+        <h3>Hostels</h3>
+    </div>
+
+</div>
+</section>
+
+<!--Facilities-->
+<section class="facilities">
+    <h1>Our Facilities</h1>
+    <p>We have technologies and facilities that would help students to explor and research </p>
+    <div class = "row">
+        <div class="fal_col">
+            <img src="lib.png">
+            <h3>Library</h3>
+            <p>Our Libraries provide students with all needed accomodation and latest books for research, we also provide study halls that allow students to work independently on their own accord</p>
+        </div>
+        <div class="fal_col">
+            <img src="playground.png">
+            <h3> Playground</h3>
+            <p>Our Playgrounds provide students with all needed accomodation and latest sport gear for games, we also organize tournoments that allow students to be competative</p>
+        </div>
+        <div class="fal_col">
+            <img src="cafe.png">
+            <h3>Tasty food</h3>
+            <p>Our Cafeteria provide students with all needed meals and good quality food, we also provide mess halls that allow students to enjoy their meals</p>
+        </div>
+    </div>
+</section>
+
+<!-----feedback----->
+<section class="feedback">
+    <h1>What our students say</h1>
+    <p>what we hear from students </p>
+    <div class = "row">
+        <div class="feed_col">
+            <img  class="img" src="test.png">
+            <div>
+                <p>Teachers are well equipped with materials to teach and are able to provide good basis for real world application</p>
+                <h3>Karma Thinley</h3>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+
+            </div>
+        </div>
+        <div class="feed_col">
+            <img   class= "img1" src="test1.png">
+            <div>
+                <p>Teachers are well equipped with materials to teach and are able to provide good basis for real world application</p>
+                <h3>Matt watson</h3>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!------Javascript for menues ----->
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showmenu() {
+            navlinks.style.right = "0";
+        }
+        function hidemenu() {
+            navlinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
